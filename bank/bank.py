@@ -12,6 +12,9 @@ class BankAccount:
 
     def withdraw(self, amount):
         self.balance = self.balance - amount
+    
+    def add_interest(self, rate):
+        self.balance = self.balance + (self.balance * rate)
 
 class Bank:
 
@@ -25,3 +28,7 @@ class Bank:
     def transfer(self, from_act, to_act, amount):
         self.accounts[from_act].withdraw(amount)
         self.accounts[to_act].deposit(amount)
+
+    def give_interest_all(self, rate):
+        for name in self.accounts:
+            self.accounts[name].add_interest(rate)
