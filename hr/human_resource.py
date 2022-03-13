@@ -6,8 +6,8 @@ class Employee:
         self.id = id
         self.salary = salary
 
-    def raise_salary(rate):
-        salary = salary + (salary * rate)
+    def raise_salary(self, rate):
+        self.salary = self.salary + (self.salary * rate)
     
 class HumanResourceService:
 
