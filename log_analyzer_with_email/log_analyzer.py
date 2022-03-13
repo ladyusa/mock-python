@@ -9,7 +9,7 @@ class LogAnalyzer:    # CUT
             try:
                 self.web_service.log_error("Filename too short: " + file_name)
             except Exception as e:
-                self.email_service.send("abc@xyz.com", "subject", str(e))
+                self.email_service.send("admin@xyz.com", "subject", str(e))
 
 class WebService:
 
