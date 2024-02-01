@@ -21,3 +21,5 @@ class HumanResourceServiceTest(unittest.TestCase):
         # ตรวจสอบที่ mock object
         mock_employee1.raise_salary.assert_called_with(0.1)
         mock_employee2.raise_salary.assert_called_with(0.1)
+
+unittest.main()

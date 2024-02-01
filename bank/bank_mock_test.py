@@ -23,3 +23,5 @@ class BankTest(unittest.TestCase):
         # ตรวจสอบที่ mock object
         mock_account_A.withdraw.assert_called_with(1000)
         mock_account_B.deposit.assert_called_with(1000)
+
+unittest.main()

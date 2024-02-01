@@ -32,3 +32,20 @@ class Bank:
     def give_interest_all(self, rate):
         for name in self.accounts:
             self.accounts[name].add_interest(rate)
+
+if __name__ == '__main__':
+    usa = BankAccount("Usa", 1000)
+    chakrit = BankAccount("Chakrit", 2000)
+
+    bankKU = Bank("KU")
+
+    bankKU.add_account(usa)
+    bankKU.add_account(chakrit)
+
+    print("Usa's balance:", usa.balance)
+    print("Chakrit's balance:", chakrit.balance)
+
+    bankKU.transfer("Chakrit", "Usa", 100)
+
+    print("Usa's balance:", usa.balance)
+    print("Chakrit's balance:", chakrit.balance)

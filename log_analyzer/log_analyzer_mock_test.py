@@ -11,4 +11,4 @@ class LogAnalyzerTest(unittest.TestCase):
 		
         mock_service.log_error.assert_called_with("Filename too short: abc.ext")
 
-
+unittest.main()

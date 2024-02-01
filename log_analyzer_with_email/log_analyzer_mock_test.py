@@ -19,5 +19,4 @@ class LogAnalyzerTest(unittest.TestCase):
         # ตรวจสอบที่ mock object
         mock_email.send.assert_called_with("admin@xyz.com", "subject", "fake exception")
 
-
-
+unittest.main()
